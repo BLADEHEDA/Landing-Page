@@ -49,23 +49,41 @@ const Section4: React.FC<Section4Props> = ({ onBuyNowClick }) => {
         </p>
 
         {/* Countdown Timer Display */}
-        <div className="flex justify-center items-center space-x-2 pt-2">
-          <div className="bg-amber-400 text-black font-extrabold px-3 py-2 rounded text-lg min-w-[50px]">
-            00 <span className="block text-[9px] font-normal uppercase">Days</span>
-          </div>
-          <span className="text-2xl font-bold text-amber-400">:</span>
-          <div className="bg-amber-400 text-black font-extrabold px-3 py-2 rounded text-lg min-w-[50px]">
-            {String(timeLeft.hours).padStart(2, '0')} <span className="block text-[9px] font-normal uppercase">Hours</span>
-          </div>
-          <span className="text-2xl font-bold text-amber-400">:</span>
-          <div className="bg-amber-400 text-black font-extrabold px-3 py-2 rounded text-lg min-w-[50px]">
-            {String(timeLeft.minutes).padStart(2, '0')} <span className="block text-[9px] font-normal uppercase">Minutes</span>
-          </div>
-          <span className="text-2xl font-bold text-amber-400">:</span>
-          <div className="bg-amber-400 text-black font-extrabold px-3 py-2 rounded text-lg min-w-[50px]">
-            {String(timeLeft.seconds).padStart(2, '0')} <span className="block text-[9px] font-normal uppercase">Seconds</span>
-          </div>
-        </div>
+    <div className="flex flex-nowrap justify-center items-center gap-1 sm:gap-2 pt-2 w-full max-w-full overflow-hidden">
+  {/* Days */}
+  <div className="flex flex-col items-center justify-center bg-amber-400 text-black font-extrabold px-2 sm:px-3 py-1.5 sm:py-2 rounded text-sm sm:text-lg min-w-[42px] sm:min-w-[54px] text-center shrink-0">
+    <span>00</span>
+    <span className="block text-[9px] font-normal uppercase leading-tight sm:hidden">D</span>
+    <span className="hidden sm:block text-[9px] font-normal uppercase leading-tight">Days</span>
+  </div>
+
+  <span className="text-sm sm:text-2xl font-bold text-amber-400 self-center shrink-0 pb-1">:</span>
+
+  {/* Hours */}
+  <div className="flex flex-col items-center justify-center bg-amber-400 text-black font-extrabold px-2 sm:px-3 py-1.5 sm:py-2 rounded text-sm sm:text-lg min-w-[42px] sm:min-w-[54px] text-center shrink-0">
+    <span>{String(timeLeft.hours).padStart(2, '0')}</span>
+    <span className="block text-[9px] font-normal uppercase leading-tight sm:hidden">H</span>
+    <span className="hidden sm:block text-[9px] font-normal uppercase leading-tight">Hours</span>
+  </div>
+
+  <span className="text-sm sm:text-2xl font-bold text-amber-400 self-center shrink-0 pb-1">:</span>
+
+  {/* Minutes */}
+  <div className="flex flex-col items-center justify-center bg-amber-400 text-black font-extrabold px-2 sm:px-3 py-1.5 sm:py-2 rounded text-sm sm:text-lg min-w-[42px] sm:min-w-[54px] text-center shrink-0">
+    <span>{String(timeLeft.minutes).padStart(2, '0')}</span>
+    <span className="block text-[9px] font-normal uppercase leading-tight sm:hidden">M</span>
+    <span className="hidden sm:block text-[9px] font-normal uppercase leading-tight">Minutes</span>
+  </div>
+
+  <span className="text-sm sm:text-2xl font-bold text-amber-400 self-center shrink-0 pb-1">:</span>
+
+  {/* Seconds */}
+  <div className="flex flex-col items-center justify-center bg-amber-400 text-black font-extrabold px-2 sm:px-3 py-1.5 sm:py-2 rounded text-sm sm:text-lg min-w-[42px] sm:min-w-[54px] text-center shrink-0">
+    <span>{String(timeLeft.seconds).padStart(2, '0')}</span>
+    <span className="block text-[9px] font-normal uppercase leading-tight sm:hidden">S</span>
+    <span className="hidden sm:block text-[9px] font-normal uppercase leading-tight">Seconds</span>
+  </div>
+</div>
       </div>
 
       {/* CTA Button 1 */}
