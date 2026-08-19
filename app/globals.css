@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-cabin), var(--font-geist-sans), sans-serif;
+  --font-mono: var(--font-geist-mono);
+
+  /* Brand palette */
+  --color-brand-purple: #4B2677;
+  --color-brand-yellow: #ECC039;
+  --color-brand-navy: #28426C;
+  --color-brand-charcoal: #2B2B2B;
+  --color-brand-white: #FFFFFF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Base Body & Global Typography Setup */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-cabin), sans-serif;
+  font-size: 26px; 
+  line-height: 1.6;
+}
+
+/* Forces text blocks and spans to inherit the base font size */
+p, div, span, li {
+  font-size: inherit;
+}
