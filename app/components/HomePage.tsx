@@ -1,7 +1,9 @@
 "use client";
+
 import React from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
+import { trackMetaEvent } from '@/utils/fbPixel' // 1. Import tracking utility
 import CtaButton from './CtaButtonProps'
 import angry from '../../images/angry.jpg'
 import arrow from '../../images/arrow down.gif'
@@ -11,9 +13,18 @@ import BlueCtaButton from './BlueButton';
 const HomePage = () => {
 
     const router = useRouter()
-    const handleRedirect = () => {
-    router.push('/home') // Navigates to your new route
-  }
+    
+    // 2. Make handleRedirect async and await tracking execution
+    const handleRedirect = async () => {
+      await trackMetaEvent('InitiateCheckout', {
+        content_name: 'Ultimate Secrets Pre-Sell Transition',
+        value: 3000,
+        currency: 'XAF',
+      });
+      
+      router.push('/home') // Navigates only AFTER tracking completes
+    }
+
   return (
     <div className="w-full flex flex-col items-center text-center text-black dark:text-white space-y-6">
       
@@ -57,18 +68,18 @@ const HomePage = () => {
         <BlueCtaButton onClick={handleRedirect}/>
 
         {/* Primary Reusable CTA Button */}
-   <ShinyRedButton
-  text="CLICK HERE"
-onClick={handleRedirect}
-/>
+        <ShinyRedButton
+          text="CLICK HERE"
+          onClick={handleRedirect}
+        />
       </div>
 
       {/* Footer Disclaimer Box */}
-<div className="w-full bg-black text-white p-6 rounded-none mt-8">
-  <p className="!text-[16px] uppercase tracking-widest leading-relaxed text-gray-400">
-    DISCLAIMER: THIS SITE IS NOT A PART OF FACEBOOK WEBSITE OR FACEBOOK INC. ADDITIONALLY, THIS SITE IS NOT ENDORSED BY FACEBOOK IN ANY WAY. FACEBOOK IS A TRADEMARK OF FACEBOOK INC.
-  </p>
-</div>
+      <div className="w-full bg-black text-white p-6 rounded-none mt-8">
+        <p className="!text-[16px] uppercase tracking-widest leading-relaxed text-gray-400">
+          DISCLAIMER: THIS SITE IS NOT A PART OF FACEBOOK WEBSITE OR FACEBOOK INC. ADDITIONALLY, THIS SITE IS NOT ENDORSED BY FACEBOOK IN ANY WAY. FACEBOOK IS A TRADEMARK OF FACEBOOK INC.
+        </p>
+      </div>
 
     </div>
   )
