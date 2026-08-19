@@ -1,18 +1,17 @@
-// utils/fbPixel.ts
 export const trackMetaEvent = async (
   eventName: string,
   customData: Record<string, any> = {},
   userData: Record<string, any> = {}
 ) => {
-  // Unique event_id for deduplication
-  const eventId = `${eventName}_${Date.now()}_${Math.floor(Math.random() * 1000)}`;
+  // Generate a unique ID to ensure deduplication between Browser and Server
+  const eventId = `${eventName}_${Date.now()}_${Math.floor(Math.random() * 10000)}`;
 
-  // 1. Browser Meta Pixel
+  // 1. Send Browser Meta Pixel Event
   if (typeof window !== 'undefined' && (window as any).fbq) {
     (window as any).fbq('track', eventName, customData, { eventID: eventId });
   }
 
-  // 2. Server-Side CAPI
+  // 2. Send Server CAPI Event
   try {
     await fetch('/api/capi', {
       method: 'POST',
@@ -26,6 +25,6 @@ export const trackMetaEvent = async (
       }),
     });
   } catch (err) {
-    console.error("CAPI dispatch error:", err);
+    console.error('CAPI dispatch error:', err);
   }
 };
