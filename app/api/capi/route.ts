@@ -16,7 +16,7 @@ export async function POST(req: Request) {
         {
           event_name: eventName,
           event_time: Math.floor(Date.now() / 1000),
-          event_id: eventId, // Used by Meta to match and deduplicate with Browser Pixel
+          event_id: eventId,
           event_source_url: sourceUrl,
           action_source: "website",
           user_data: {
@@ -30,6 +30,7 @@ export async function POST(req: Request) {
           custom_data: customData || {},
         },
       ],
+      test_event_code: "TEST9573", // Pass test code so events appear in the Test screen
     };
 
     const pixelId = '1397197105312098';
