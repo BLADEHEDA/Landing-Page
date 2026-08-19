@@ -30,7 +30,7 @@ export async function POST(req: Request) {
           custom_data: customData || {},
         },
       ],
-      test_event_code: "TEST9573", // Pass test code so events appear in the Test screen
+      // test_event_code: "TEST9573", // Uncomment this line when testing in Meta Events Manager
     };
 
     const pixelId = '1397197105312098';
