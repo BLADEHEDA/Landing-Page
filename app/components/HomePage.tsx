@@ -1,6 +1,7 @@
 "use client";
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 import CtaButton from './CtaButtonProps'
 import angry from '../../images/angry.jpg'
 import arrow from '../../images/arrow down.gif'
@@ -8,6 +9,11 @@ import ShinyRedButton from './ShinyButton'
 import BlueCtaButton from './BlueButton';
 
 const HomePage = () => {
+
+    const router = useRouter()
+    const handleRedirect = () => {
+    router.push('/home') // Navigates to your new route
+  }
   return (
     <div className="w-full flex flex-col items-center text-center text-black dark:text-white space-y-6">
       
@@ -48,15 +54,12 @@ const HomePage = () => {
       {/* Reusable CTA Buttons */}
       <div className="w-full flex flex-col items-center space-y-4">
         {/* Blue Secondary Button */}
-        <BlueCtaButton/>
+        <BlueCtaButton onClick={handleRedirect}/>
 
         {/* Primary Reusable CTA Button */}
    <ShinyRedButton
   text="CLICK HERE"
-  onClick={() => {
-    // Put your custom action here (e.g., scroll down, open modal, trigger checkout)
-    console.log("Button clicked!")
-  }}
+onClick={handleRedirect}
 />
       </div>
 
