@@ -19,12 +19,12 @@ const Section1 = () => {
         <div className="grid grid-cols-2 gap-3 w-full">
           <div className="w-full h-auto">
             <Image
-            src={test1} 
-            alt="Testimonial 1"
-            width={400}
-            height={500}
-            className="w-full h-auto rounded shadow-sm object-cover"
-          />
+              src={test1} 
+              alt="Testimonial 1"
+              width={400}
+              height={500}
+              className="w-full h-auto rounded shadow-sm object-cover"
+            />
           </div>
           <div className="w-full h-auto">
             <Image
@@ -51,7 +51,7 @@ const Section1 = () => {
         </div>
       </div>
 
-      {/* 2. Text Section (Inherits 22px automatically) */}
+      {/* 2. Text Section */}
       <p className="max-w-2xl leading-relaxed">
         Asides from that Generally as a man, not lasting long in bed and having a{' '}
         <span className="text-red-600 font-bold underline">small manhood</span>{' '}
@@ -71,7 +71,7 @@ const Section1 = () => {
         </div>
         <div className="w-full">
           <Image
-             src={img2}
+            src={img2}
             alt="Side image 2"
             width={300}
             height={300}
@@ -83,7 +83,7 @@ const Section1 = () => {
       {/* 4. Single Image Underneath */}
       <div className="w-full max-w-md my-2">
         <Image
-            src={img3}
+          src={img3}
           alt="Frustrated Man thinking"
           width={600}
           height={400}
@@ -91,7 +91,7 @@ const Section1 = () => {
         />
       </div>
 
-      {/* 5. Direct Response Copy Blocks (Inherits 22px automatically) */}
+      {/* 5. Direct Response Copy Blocks */}
       <div className="space-y-4 max-w-2xl leading-relaxed">
         <p>
           But my brother I want you to understand that it&apos;s not your fault that you are having this problem
@@ -99,12 +99,12 @@ const Section1 = () => {
         <p>
           I mean for the fact that you&apos;re always looking for solutions and{' '}
           <span className="text-red-600 font-bold underline">
-            ways to solve this problem means that you&apos;re just one step away from the correct product
+            ways to solve this problem means that you&apos;re just one step away from the correct guide
           </span>{' '}
           that will help you to get rid of these problems permanently
         </p>
         <p>
-          And that&apos;s where this New effective and powerful herbal solution comes in...
+          And that&apos;s where this New effective and powerful practical digital guide comes in...
         </p>
       </div>
 
@@ -115,7 +115,7 @@ const Section1 = () => {
           Listen
         </h3>
         
-        {/* Paragraphs inherit base 22px, but styled bold */}
+        {/* Paragraphs inherit base styles, styled bold */}
         <p className="font-bold leading-snug">
           If you&apos;re having a small manhood and you are tired of the shames & embarrassments
         </p>
@@ -140,23 +140,23 @@ const Section1 = () => {
 
       {/* 8. Main Product Image Container */}
       <div className="w-full">
-      <Image
-        className="w-full h-auto"
-        src={heroImg}
-        alt="Hero image"
-        width={1200}
-        height={800}
-        priority
-      />
+        <Image
+          className="w-full h-auto"
+          src={heroImg}
+          alt="Hero image"
+          width={1200}
+          height={800}
+          priority
+        />
       </div>
 
-      {/* 9. NAFDAC Registration Number (Explicitly scaled larger) */}
+      {/* 9. Header Callout */}
       <h4 className="text-3xl font-extrabold text-[#4B2677] dark:text-purple-400 tracking-wide my-4">
-       NATURAL HEALTH COMBO
+        PRACTICAL DIGITAL GUIDE
       </h4>
 
       {/* 10. Call To Action Button */}
- <CtaButton  text="ORDER NOW" />
+      <CtaButton text="DOWNLOAD THE GUIDE NOW" />
 
     </div>
   )

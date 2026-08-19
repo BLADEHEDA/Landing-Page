@@ -21,17 +21,17 @@ const HeaderSection = () => {
         </h2>
       </div>
 
-      {/* Intro Paragraph 1 (Inherits global 22px Cabin font) */}
-      <p className="max-w-2xl leading-relaxed mb-[-40px">
+      {/* Intro Paragraph 1 */}
+      <p className="max-w-2xl leading-relaxed mb-[20px]">
         To be honest with you there&apos;s nothing as{' '}
         <span className="text-red-600 underline font-semibold">
-          embarrassing,annoying and humiliating
+          embarrassing, annoying and humiliating
         </span>{' '}
         as wanting to go down with your woman and your penis starts misbehaving
       </p>
 
       {/* Image 1 */}
-      <div className="w-full max-w-md mb-[-40px] mt-[-28px]">
+      <div className="w-full max-w-md mb-[-0px] mt-[-28px]">
         <Image
           src={gif1}
           alt="Illustration"
@@ -42,7 +42,7 @@ const HeaderSection = () => {
 
       {/* Caption 1 */}
       <p className="font-semibold max-w-xl">
-        (is either, it&apos;s too small and she&apos;s not feeling it or you ejaculate immediately you penetrate her{' '}
+        (it&apos;s either, it&apos;s too small and she&apos;s not feeling it or you ejaculate immediately you penetrate her{' '}
         <span className="font-bold underline">wet-juicy-pussy</span>)
       </p>
 
@@ -59,7 +59,7 @@ const HeaderSection = () => {
 
       {/* Subtext 1 */}
       <p className="max-w-xl leading-relaxed">
-        it&apos;s One of the most frustrating & embarrassing situations a man can experience in life
+        It&apos;s one of the most frustrating & embarrassing situations a man can experience in life
       </p>
 
       {/* Image 3 */}
@@ -77,11 +77,11 @@ const HeaderSection = () => {
       <div className="space-y-4 max-w-2xl leading-relaxed">
         <p>
           We all know that size and how long you last{' '}
-          <span className="text-red-600 font-bold underline">matters alot</span>{' '}
+          <span className="text-red-600 font-bold underline">matters a lot</span>{' '}
           when it comes to bedroom activities
         </p>
         <p>
-          And no woman is happy when she&apos;s dealing with a man with small penis and that can&apos;t even last long enough to satisfy her, when what she truly deserves is a big cock.
+          And no woman is happy when she&apos;s dealing with a man with a small penis and that can&apos;t even last long enough to satisfy her, when what she truly deserves is a big cock.
         </p>
       </div>
 
@@ -98,7 +98,7 @@ const HeaderSection = () => {
 
       {/* Subtext 2 */}
       <p className="max-w-xl leading-relaxed">
-        A man that can fuck hell out of her juicy pussy
+        A man that can fuck the hell out of her juicy pussy
       </p>
 
       {/* Image 5 */}
@@ -115,15 +115,15 @@ const HeaderSection = () => {
       {/* Text Section 3 */}
       <div className="space-y-4 max-w-2xl leading-relaxed">
         <p>
-          One thing you should understand as a man is that women dont joke with their{' '}
+          One thing you should understand as a man is that women don&apos;t joke with their{' '}
           <span className="text-red-600 font-bold underline">sexual desires</span>
         </p>
         <p>
-          No matter how much a woman loves you, no matter how religious she is, if you don&apos;t satisfy her in bed she will find a more capable man who will Satisfy her,That&apos;s one of the major reason why most of these women (especially the ones married to rich & wealthy men) cheat on their partners with broke and struggling men that has nothing to offer them
+          No matter how much a woman loves you, no matter how religious she is, if you don&apos;t satisfy her in bed she will find a more capable man who will satisfy her. That&apos;s one of the major reasons why most of these women (especially the ones married to rich & wealthy men) cheat on their partners with broke and struggling men that have nothing to offer them
         </p>
       </div>
 
-      {/* End Point Header (Scaled slightly larger to match Section1 transition headings) */}
+      {/* End Point Header */}
       <div className="pt-6 pb-2">
         <h3 className="text-3xl font-extrabold tracking-wide">
           See for yourself below

@@ -20,25 +20,25 @@ interface Section2Props {
 
 const Section2: React.FC<Section2Props> = ({ onBuyNowClick }) => {
   return (
-    <div className="w-full !mt-[50px]  flex flex-col items-center text-center text-black dark:text-white space-y-6 my">
+    <div className="w-full !mt-[50px] flex flex-col items-center text-center text-black dark:text-white space-y-6 my">
       
       {/* 1. Header Text Callout */}
       <div className="space-y-4 max-w-2xl leading-relaxed">
         <p className="font-bold tracking-wide uppercase">
           IF YOU HAVE EVER WISHED FOR A{' '}
-          <span className="text-red-600 underline">PRODUCT</span> THAT WORKS INSTANTLY AFTER USE THEN THIS{' '}
-          <span className="text-red-600 underline">STRONG MAN SYRUP</span> FOR MEN IS WHAT YOU{' '}
+          <span className="text-red-600 underline">PRACTICAL GUIDE</span> THAT WORKS INSTANTLY AFTER READING THEN THIS{' '}
+          <span className="text-red-600 underline">DIGITAL BLUEPRINT</span> FOR MEN IS WHAT YOU{' '}
           <span className="text-red-600 underline">NEED</span>
         </p>
 
         <p className="font-semibold text-blue-600">
           SAFE, VERY EFFECTIVE AND NATURAL Solution that will help{' '}
-          <span className="text-black dark:text-white font-normal">you you</span>{' '}
+          <span className="text-black dark:text-white font-normal">you</span>{' '}
           <span className="text-red-600 font-bold underline">
             last longer between 45mins &ndash; 1hour in Bed and grow your penis
           </span>{' '}
           to your desired{' '}
-          <span className="text-red-600 font-bold underline">size</span>. This Ogbonge MAN POWER has saved over 11,750+ African MEN from painful bedroom embarrassment...
+          <span className="text-red-600 font-bold underline">size</span>. This Ogbonge DIGITAL GUIDE has saved over 11,750+ African MEN from painful bedroom embarrassment...
         </p>
       </div>
 
@@ -49,15 +49,15 @@ const Section2: React.FC<Section2Props> = ({ onBuyNowClick }) => {
           alt="Happy Couple"
           width={400}
           height={300}
-        //   className="w-full h-auto rounded shadow-sm object-cover"
+        // className="w-full h-auto rounded shadow-sm object-cover"
         />
       </div>
 
       {/* 3. Product Banner Graphic */}
       <div className="w-full max-w-m my-2">
         <Image
-            src={pic2}
-          alt="Instant Erection & Natural Penis Enlargement Syrup For Men"
+          src={pic2}
+          alt="Instant Erection & Natural Penis Enlargement Digital Guide For Men"
           width={600}
           height={300}
           className="w-full h-auto shadow-sm object-contain"
@@ -67,7 +67,7 @@ const Section2: React.FC<Section2Props> = ({ onBuyNowClick }) => {
       {/* 4. Anatomy Graphic */}
       <div className="w-full max-w-md ">
         <Image
-         src={pic3}
+          src={pic3}
           alt="Anatomy Diagram"
           width={600}
           height={350}
@@ -75,57 +75,50 @@ const Section2: React.FC<Section2Props> = ({ onBuyNowClick }) => {
         />
       </div>
 
-      {/* 5. First BUY NOW CTA Button */}
+      {/* 5. First DOWNLOAD CTA Button */}
       <BlueCtaButton
-        text="BUY NOW"
+        text="DOWNLOAD THE GUIDE NOW"
         // onClick={onBuyNowClick}
       />
 
       {/* 6. Intimate Graphic */}
-<div className="w-full max-w-md my-2 flex justify-center">
-  <Image
-    src={pic4}
-    alt="Intimate Moment"
-    width={250}
-    height={200}
-    className="mx-auto h-auto object-cover"
-  />
-</div>
+      <div className="w-full max-w-md my-2 flex justify-center">
+        <Image
+          src={pic4}
+          alt="Intimate Moment"
+          width={250}
+          height={200}
+          className="mx-auto h-auto object-cover"
+        />
+      </div>
 
       {/* 7. Subtext Caption */}
-      <p className="  mt-[30px] text-red-600 font-bold leading-snug">
+      <p className="mt-[30px] text-red-600 font-bold leading-snug">
         A permanent and effective solution to weak erection, quick ejaculation and small penis
       </p>
 
       {/* 8. Main Product Packaging Image */}
       <div className="w-full max-w-m my-2">
-        {/* <Image
-           src={pic5}
-          alt="Happy Family Man Power Product Box and Bottle"
-          width={600}
-          height={700}
-          className="w-full h-auto rounded shadow-md object-cover"
-        /> */}
-            <Image
-        className="w-full h-auto"
-        src={heroImg}
-        alt="Hero image"
-        width={1200}
-        height={800}
-        priority
-      />
+        <Image
+          className="w-full h-auto"
+          src={heroImg}
+          alt="Hero image"
+          width={1200}
+          height={800}
+          priority
+        />
       </div>
 
-      {/* 9. Second BUY NOW CTA Button */}
+      {/* 9. Second DOWNLOAD CTA Button */}
       <BlueCtaButton
-        text="BUY NOW"
+        text="DOWNLOAD THE GUIDE NOW"
         // onClick={onBuyNowClick}
       />
 
       {/* 10. Measurement Graphic (Before/After Chart) */}
       <div className="w-full my-2">
         <Image
-       src={pic5}
+          src={pic5}
           alt="Before and After Measurement Chart"
           width={600}
           height={350}
@@ -136,7 +129,7 @@ const Section2: React.FC<Section2Props> = ({ onBuyNowClick }) => {
       {/* 11. Circular Proof Shots */}
       <div className="w-full my-2">
         <Image
-         src={pic6}
+          src={pic6}
           alt="Proof Comparison"
           width={600}
           height={300}
@@ -144,16 +137,16 @@ const Section2: React.FC<Section2Props> = ({ onBuyNowClick }) => {
         />
       </div>
 
-        {/* 12. Direct Comparison Proof */}
-        <div className="w-full my-2">
-            <Image
-            src={pic7}
-            alt="Direct Before and After"
-            width={600}
-            height={400}
-            className="w-full h-auto shadow-sm object-contain"
-            />
-        </div>
+      {/* 12. Direct Comparison Proof */}
+      <div className="w-full my-2">
+        <Image
+          src={pic7}
+          alt="Direct Before and After"
+          width={600}
+          height={400}
+          className="w-full h-auto shadow-sm object-contain"
+        />
+      </div>
 
     </div>
   )

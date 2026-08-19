@@ -16,7 +16,7 @@ const Hero = () => {
       />
       
       {/* Default CtaButton uses default link and "GET 50% OFF NOW" text */}
-      <CtaButton />
+      <CtaButton   text="DOWNLOAD THE GUIDE NOW" />
     </div>
   )
 }
